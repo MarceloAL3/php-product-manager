@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f3f6fb;
+
+    color: #172033;
+}
+
+.container {
+    width: min(1000px, 92%);
+
+    margin: 0 auto;
+
+    padding: 48px 0;
+}
+
+header {
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    font-size: 13px;
+}
+
+h1 {
+    margin: 8px 0;
+}
+
+.card {
+    background: #fff;
+
+    border-radius: 14px;
+
+    padding: 24px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 8px 24px
+        rgba(0, 0, 0, 0.06);
+}
+
+form {
+    display: grid;
+
+    gap: 12px;
+}
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    border:
+        1px solid #d7dce5;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+}
+
+button {
+    border: 0;
+
+    border-radius: 8px;
+
+    padding: 12px 16px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+form button,
+.section-header button {
+    background: #172033;
+
+    color: #fff;
+}
+
+.section-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.product {
+    border-top:
+        1px solid #e6e9ef;
+
+    padding: 16px 0;
+}
+
+.product:first-child {
+    border-top: 0;
+}
+
+.product strong {
+    display: block;
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+.message {
+    margin-top: 12px;
+
+    font-weight: 700;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 28px 0;
+    }
+
+    .section-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+}
